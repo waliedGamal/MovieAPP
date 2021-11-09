@@ -1,0 +1,137 @@
+body , html
+{
+    background-color: #000000f2;
+    scroll-behavior: unset !important;
+}
+#home input
+{
+    border:none;
+    border-bottom: 1px white solid ;
+    border-radius: 0%;
+}
+#ContactUs input
+{
+    border:none;
+    border-bottom: 1px white solid ;
+    border-radius: 0%;
+}
+.nav ul li 
+{
+    position: fixed;
+    padding-bottom: 10px;
+    top:50%;
+    opacity: 0;
+}
+.nav .category a
+{
+    text-decoration: none;
+    color:white;
+    line-height: 36px;
+    font-weight: 400;
+}
+.nav .category a:hover
+{
+    color:#ff655c;
+}
+.nav
+{
+    width: 240px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: -240;
+    z-index: 9999;
+}
+.nav-toggle
+{
+    width: 60px;
+    background-color: white;
+    height: 100vh;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left:240;
+}
+.nav-toggle .nav-hide
+{
+    cursor: pointer;
+    color: black;
+}
+.nav-toggle .menu-social i
+{
+    cursor: pointer;
+}
+.nav .social
+{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+.nav .social i
+{
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav .social i:hover
+{
+    color:#ff655c;
+}
+.nav p
+{
+    color: #999;
+}
+.nav .menubar
+{
+    cursor: pointer;
+    color: black;
+}
+
+.nav .hide
+{
+    display: none;
+}
+
+.movies .img-box .box
+{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.movies .img-box:hover .box
+{
+    background-color: rgba(255,255,255,.7);
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+
+.movies .box .box-contnet
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container
+{
+    padding-left:4.5rem 
+}

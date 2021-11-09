@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title id="title">movies</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+
+        <nav class="nav py-4 text-white"> 
+
+            <div class="nav-toggle py-4 text-center d-flex flex-column h-100 justify-content-between ">
+                <div class="logo"> <img src="imags/logo.png" class="w-50"></div>
+                <div class="nav-hide ">
+                    <i class="fas fa-times fs-3 hide"></i>
+                    <i class="fas fa-bars fs-3 menubar" ></i>
+                </div>
+                <div class="text-dark menu-social">
+                    <i class="fas fa-globe d-block mb-3"></i>
+                    <i class="fas fa-share-alt d-block"></i>
+                </div>
+                
+            </div>
+            <div class="category  ps-4">
+                <ul class=" list-unstyled pb-5">
+                    <li class="item1"><a value="now_playing" href="#">Now playing</a></li>
+                    <li class="item2"><a value="popular" href="#">Popular</a></li>
+                    <li class="item3"><a value="top_rated" href="#">Top Rated</a></li>
+                    <li class="item4"><a value="trending" href="#">Trending</a></li>
+                    <li class="item5"><a value="upcoming" href="#">Upcoming</a></li>
+                    <li class="item6"><a href="#ContactUs">Contact Us</a></li>
+                </ul>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-globe"></i>
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+                
+            </div>
+        </nav>
+
+        <section id="home">
+            <header>
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-lg-6  ">
+                        <input class="form-control mb-5 bg-transparent text-center" id="searchApi" type="text" placeholder="get more by word...">
+                        </div>
+                        <div class="col-lg-6 "> 
+                            <input class="form-control bg-transparent text-center" id="search" type="text" placeholder="search...">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="container movies">
+                <div class="row " id="DisplaySearch">
+
+                </div>
+                <div class="row" id="Display" >
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="ContactUs" class="py-5">
+            <div class=" container">
+                <div class="text-white my-5">
+                    <h2>Contact Us...</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="name" type="text" placeholder="Enter Your Name">
+                        <p id="name-alert" class="alert alert-danger d-none">Your Name is not valid</p>
+                    </div>
+                    <div class="col-lg-6  p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="email" type="email" placeholder="Enter Email">
+                        <p id="email-alert" class="alert alert-danger d-none "> Enter valid email </p>
+                    </div>
+                    <div class="col-lg-6  p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="phone" type="text" placeholder="Enter Phone">
+                        <p id="phone-alert" class="alert alert-danger d-none ">  Enter valid phone </p>
+                    </div>
+                    <div class="col-lg-6  p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="age" type="text" placeholder="Enter Age">
+                        <p id="age-alert" class="alert alert-danger d-none "> Enter valid Age </p>
+                    </div>
+                    <div class="col-lg-6  p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="pass" type="password" placeholder="Enter Password">
+                        <p id="pass-alert" class="alert alert-danger d-none ">entre valid password ,Minimum eight characters, at least one letter and one number.</p>
+                    </div>
+                    <div class="col-lg-6 p-2 pe-3 ">
+                        <input class="form-control bg-transparent text-center" id="repass" type="password" placeholder="Enter RePassword">
+                        <p id="repass-alert" class="alert alert-danger d-none "></p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger my-3" disabled="true" >Submit</button>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
